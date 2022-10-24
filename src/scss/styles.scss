@@ -37,6 +37,8 @@ hr {
 
 .faq {
   position: relative;
+  margin-top: 10rem;
+  margin-bottom: 7rem;
 
   &__box {
     width: 6rem;
@@ -64,7 +66,7 @@ hr {
 
     &-content {
       padding: 4rem 1.5rem 3rem 1.5rem;
-      overflow-y: scroll;
+      overflow-y: hidden;
 
       &_title {
         text-align: center;
@@ -114,6 +116,68 @@ hr {
           font-size: .75rem;
           line-height: 1.7;
           padding-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .faq {
+    &__card {
+      width: 17rem;
+
+      &-content {
+        &_faq {
+          &_question {
+            padding-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .faq {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &__box {
+      width: 11rem;
+      top: 13.5rem;
+      left: -5.5rem;
+    }
+
+    &__card {
+      flex-direction: row;
+      width: 55rem;
+      overflow: hidden;
+      height: 32rem;
+      background: url(../images/bg-pattern-desktop.svg), #fff;
+      background-repeat: no-repeat;
+      background-position: -37rem 70%;
+
+      &-image {
+        width: auto;
+        height: auto;
+        margin-top: -2rem;
+        margin-left: -6rem;
+      }
+
+      &-content {
+        overflow-y: scroll;
+        width: 50%;
+        margin-left: auto;
+        padding: 4rem 6rem 4rem 0;
+
+        &::-webkit-scrollbar {
+          width: 0;
+          background-color: transparent;
+        }
+
+        &_title {
+          text-align: left;
         }
       }
     }

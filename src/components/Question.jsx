@@ -1,9 +1,17 @@
 import React from 'react'
 
 export const Question = (props) => {
+  const openQuestion = () => {
+    if (props.questionId === 2) {
+      return true
+    }
+
+    return false
+  }
+
   return (
     <>
-      <details className='faq__card-content_faq'>
+      <details open={openQuestion()} className='faq__card-content_faq'>
         <summary className='faq__card-content_faq_question'>
           {props.question}
         </summary>

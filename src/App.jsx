@@ -17,6 +17,7 @@ function App () {
             {questions.map((q, index) =>
               <Question
                 key={index}
+                questionId={q.id}
                 question={q.question}
                 answer={q.answer}
               />
