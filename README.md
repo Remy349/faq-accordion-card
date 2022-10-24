@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [FAQ Accordion Card](https://remy349.github.io/faq-accordion-card/)
 
 ## My process
 
