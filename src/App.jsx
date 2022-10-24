@@ -10,7 +10,7 @@ function App () {
     <div className='faq'>
       <img className='faq__box' src={boxIllustration} alt='' />
       <article className='faq__card'>
-        <img className='faq__card-image_img' src={womanDesktop} alt='' />
+        <img className='faq__card-image' src={womanDesktop} alt='' />
         <div className='faq__card-content'>
           <h1 className='faq__card-content_title'>FAQ</h1>
           <div className='faq__card-content_container'>
